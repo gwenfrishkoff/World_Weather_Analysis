@@ -1,9 +1,13 @@
-# Adding config.py file.
+# Ignore config files.
+config.ipynb
 config.py
 
-# Adding additional files
+# Ignore additional files
 API_practice.ipynb
 random_numbers.ipynb
+
+# Ignore directories
+.idea/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -19,13 +19,14 @@ For this project, we used the following software and web-based resources:
     	<ol>
 		<li> NumPy (Deliverable #1)
         <li> CityPy (Deliverable #1)
-		<li> Requests (Deliverable #2)
-        <li> Matplotlib (Deliverable #2)
-		<li> SciPy (Deliverable #3)
+		<li> Requests (Deliverables #1-#3)
+		<li> Pandas (Deliverables #1-#3)
+        <li> Matplotlib (Deliverables #2-#3)
+		<li> SciPy (Deliverables #2-#3)
         </ol>
-	<li> Google APIs, including the following web-based methods and resources:
+	<li> Web-based methods and resources, including the following APIs:
         <ol>
-        <li> OpenWeatherMap (Deliverable #1)
+        <li> OpenWeatherMap API (Deliverable #1)
         <li> Jupyter G-Maps (Deliverable #2)
         <li> Google Maps, Places, & Directions APIs (Deliverable #3)
         </ol>
@@ -37,7 +38,7 @@ We used the above methods and resources to carry out the following tasks:
 	<li> Task #1: Generate 2,000 random latitudes & longitudes (Resources & Methods: Python > NumPy Module);
 	<li> Task #2: Retrieve cities for each combination (i.e., pair) of latitudes & longitudes (Resources & Methods: Python > CityPy Module);
 	<li> Task #3: Retrieve weather data for each of the cities (Resources & Methods: Python > Requests module (for JSON traversals) & OpenWeatherMap API);
-	<li> Task #4: Create DataFrames to store the data (Resources & Methods: Python > Pandas Library);
+	<li> Task #4: Create DataFrames to store, clean/filter, and parse the data (Resources & Methods: Python > Pandas Library);
 	<li> Task #5: Create scatterplots that show the relationship between latitude & weather parameters for the cities of interest (Resources & Methods: Python > Matplotlib Module) 
 	<li> Task #6: Perform linear regression on data from Northern & Southern hemispheres (Resources & Methods: Python > SciPy Module);
 	<li> Task #7: Map the cities (Resources & Methods: Jupyter G-Maps).
@@ -49,7 +50,7 @@ For Deliverable #1, we wrote python code that generates a set of GCS data (latit
 	<ol>
 	<li> Step #1: We used *NumPy* to generate a set of 2,000 random latitude-longitude (lat-long) coordinate pairs;
 	<li> Step #2: We used *CitiPy* to retrieve a list of nearest cities for each lat-long coordinate pair;
-	<li> Step #3: We used *OpenWeatherMap* to perform an API call to retrieve the following weather data for each city:
+	<li> Step #3: We used *OpenWeatherMap* and Python *Requests* (JSON traversals) to perform API calls to retrieve the following weather data for each city:
 		<ol>
 		<li> City & country
 		<li> Date
@@ -68,7 +69,7 @@ The python code to create this deliverable is stored in a Jupyter Notebooks file
 For Deliverable #2, we used python methods and resources to complete the following steps:  
 	<ol>
 	<li> Step #1: We used Python *Requests* to create the Input statements that prompt end users for their weather preferences;
-	<li> Step #2: We used .loc methods to filter travel data based on user preferences (preferred weather conditions) and to identify potential travel destinations and nearby hotels;
+	<li> Step #2: We used Python *.loc* methods to clean dn filter travel data based on user preferences (preferred weather conditions) and to identify potential travel destinations and nearby hotels;
 	<li> Step #3: We used *Matplotlib* to create marker layer maps with pop-up markers for the cities of interest, to show the relationship between latitude & weather parameters for each city.
 	</ol>
 

@@ -8,6 +8,7 @@ random_numbers.ipynb
 
 # Ignore directories
 .idea/
+Misc
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
